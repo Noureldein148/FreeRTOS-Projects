@@ -89,7 +89,7 @@
 to exclude the API function. */
 
 #define INCLUDE_vTaskPrioritySet		0
-#define INCLUDE_uxTaskPriorityGet		0
+#define INCLUDE_uxTaskPriorityGet		1
 #define INCLUDE_vTaskDelete				1
 #define INCLUDE_vTaskCleanUpResources	0
 #define INCLUDE_vTaskSuspend			0
@@ -98,5 +98,8 @@ to exclude the API function. */
 #define INCLUDE_vSemaphoreCreateBinary          1
 #define INCLUDE_xSemaphoreGive					1
 #define INCLUDE_xSemaphoreTake					1
+/******************************************************/
+#define configUSE_MUTEXES                    	    1
+#define configSUPPORT_DYNAMIC_ALLOCATION            1
 
 #endif /* FREERTOS_CONFIG_H */
